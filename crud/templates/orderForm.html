@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    <form>
+    <h1>Add Order</h1>
+    <div>Customer : {{form.customer_id}}</div><br>
+    <div>Product : {{form.product_id}}</div><br>
+    <div>Price : {{form.unit_price}}</div><br>
+    <div>Qty : {{form.qty}}</div><br>
+    <div>Total Price : {{form.total_price}}</div><br>
+    <input type="submit" value="place order">
+    <a href="#">cancel</a>
+</form>
+{% endblock %}
